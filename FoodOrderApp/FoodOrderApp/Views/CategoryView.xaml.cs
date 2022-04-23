@@ -20,6 +20,8 @@ namespace FoodOrderApp.Views
             InitializeComponent();
             cvm = new CategoryViewModel(category);
             this.BindingContext = cvm;
+            mainImage.Source = category.ImageUrl;
+            mainText.Text = category.CategoryName;
         }
 
         private async void ImageButton_Clicked(object sender, EventArgs e)

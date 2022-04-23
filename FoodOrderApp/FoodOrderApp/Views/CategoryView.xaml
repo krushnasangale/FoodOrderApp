@@ -13,10 +13,10 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Image Grid.Row="0" Source="burger.jpg" HeightRequest="300"
-                   Aspect="AspectFill" VerticalOptions="Center"/>
+            <Image Grid.Row="0" Source="" HeightRequest="300"
+                   Aspect="AspectFill" VerticalOptions="Center" x:Name="mainImage"/>
 
-            <Label Grid.Row="1" Text="Burger"
+            <Label Grid.Row="1" Text="" x:Name="mainText"
                    TextColor="White" FontAttributes="Bold" FontSize="35" Margin="25,-95,0,0"/>
             <ImageButton Source="backbutton.png" Grid.Row="0" HorizontalOptions="Start" 
                          Aspect="AspectFill" VerticalOptions="Start" Margin="10,10" 
@@ -33,8 +33,7 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding TotalFoodItems,
-                        StringFormat='{0} Total Items'}" FontAttributes="Bold" FontSize="18"/>
+                    <Label Grid.Row="0" Grid.Column="0" Text="Total Items" FontAttributes="Bold" FontSize="18"/>
 
                     <Image Grid.Row="0" Grid.Column="1" Source="listdown.png" HeightRequest="30"/>
 
